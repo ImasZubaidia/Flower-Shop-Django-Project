@@ -1,0 +1,126 @@
+
+body{
+    background-color: #ffeddf;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Page Header and nav bar */
+nav ul{
+    background: linear-gradient(90deg, #ffeddf 0%, #e1a581 50%, #dd9e85 100%);
+    color: #4b1002;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: #b5494d 1.95px 1.95px 2.6px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav li {
+    font-size: 1.5vw;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.logo{
+    width: 33%;
+    height: 33%;
+    margin-left: 1%;
+}
+
+nav {
+    text-align: center;
+    width: 45%;
+    margin-top: 8%;
+}
+.home{
+    width: 112%;
+    height: auto;
+}
+.profile-icon{
+    width: 400%;
+    height: auto;
+}
+.orders-basket-icon{
+    width: 400%;
+    height: auto;
+}
+.icons{
+    display: flex;
+    width: 16%;
+    align-items: baseline;
+    margin-top: 6%;
+    gap: 25%;
+}
+
+/*Container and page content*/
+#container {
+    width: 77%;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+
+/*Page footer*/
+.footer_images{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.right-footer{
+    width: 36%;
+}
+.left-footer{
+    width: 50%;
+}
+
+.footer_bar p{
+    background-color: #efbead;
+    width: 77%;
+    margin: auto;
+    height: 30%;
+    padding-top: 6%;
+    text-align: -webkit-center;
+    padding-bottom: 2%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 40%;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    font-size: 1.2vw;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 2.1vw;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5vw;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }

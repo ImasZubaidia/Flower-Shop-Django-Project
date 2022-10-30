@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css\login_style.css' %}">
+	<link rel="icon" href="{% static 'Images\common_imgs\orders-basket-icon.png'%}">
+</head>
+<body>
+	<form action="/recognize_me/sucess" method="post">
+		{% csrf_token %}
+
+		<div class="main-container">
+			<div class="login-container">
+		  	<span class="login-form-title texts">Login</span>
+			<span class="Existing-Customer texts">Existing Customer</span>
+
+		    <label class= texts for="required"><b>*Required</b></label>
+		    <input class="input-style" type="text" placeholder="Email address *" name="email" required>
+
+		    <input class="input-style" type="password" placeholder="Password *" name="psw" required>
+
+		    <button type="submit">Sign In</button>
+
+			<div class="error-messages texts">
+				{% if messages %}
+				<ul class="messages">
+					{% for message in messages %}
+					<li>{{ message }}</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+			  </div>
+	  	</div>
+
+	  <div class="regestration-container">
+	  	
+		<span class="regestration-title texts">Join Our Family!</span>
+
+	    <label class ="texts" for="join-family"><b>Be part of our club and get a free bouquet for every two bouquets that you purshase in a row in the same month .</b></label>
+		<a href="registration"> <button type="button">Register with your email</button></a>
+	   
+	  </div>
+	  
+	</div>
+	</form>
+
+ <img class="footer" src="{% static 'images\login\logo-footer.png' %}" alt="footer">
+
+</body>
+</html>

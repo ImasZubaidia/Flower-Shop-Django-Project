@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Regestration</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css\regestration_style.css' %}">
+	<link rel="icon" href="{% static 'Images\common_imgs\orders-basket-icon.png'%}">
+</head>
+<body>
+	<form action="/recognize_me/register_me" method="post">
+		{% csrf_token %}
+
+			
+		<div class="main-container">
+			<span class="regestration-form-title texts">Regestration</span>
+			<span class="Existing-Customer texts">Welcome to the family!</span>
+		    <label class= texts for="required"><b>*Required</b></label>
+			
+		<div class="right-and-left">
+		  <div class="left-container">
+
+		    <input class="input-style" type="first-name" placeholder="First Name *" name="first-name" required>
+		    <input class="input-style" type="email" placeholder="Email address *" name="email" required>
+		    <input class="input-style" type="Location" placeholder="City *" name="city" required>
+		    <input class="input-style" type="password" placeholder="Password *" name="psw" required>
+
+	  	</div>
+
+	  <div class="right-container">
+	  	
+			<input class="input-style" type="last-name" placeholder="Last Name *" name="last-name" required>
+		    <input class="input-style" type="confirm-email" placeholder="Confirm Email address *" name="cemail" required>
+		    <input class="input-style" type="mobile-phone" placeholder="Mobile Phone *" name="mobile" required>
+		    <input class="input-style" type="password" placeholder="Confirm Password *" name="cpsw" required>
+
+
+	  </div>
+	  </div>
+	  <input class="input-style" type="delivary-address" placeholder="delivary address *" name="delivary-address" required>
+	  
+	  <div class="error-messages texts">
+		{% if messages %}
+		<ul class="messages">
+			{% for message in messages %}
+			<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	  </div>
+
+	  <div class="register">
+	  <label class ="texts" for="join-family"><b>By Clicking ‘Register’ you will be part of our Amazing Family ! and you will benfit from our exclusive offers.</b></label>
+
+	    <button type="submit">Register</button>
+	   </div>
+	</div>
+
+	</form>
+
+
+
+<img class="footer" src="{% static 'images\login\logo-footer.png' %}" alt="footer">
+
+</body>
+</html>

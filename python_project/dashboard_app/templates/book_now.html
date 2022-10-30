@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Flower</title>
+    {% load static %}	
+    <link rel="stylesheet" type="text/css" href="{% static 'css\book_now.css'%}">
+    <script src="{% static 'js\basket.js'%}"></script>
+    <link rel="icon" href="{% static 'Images\common_imgs\orders-basket-icon.png'%}">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <img class="logo" src="{% static 'Images\common_imgs\logo.png'%}" alt="logo">
+        <nav>
+            <ul>
+                <li> <a href="new_arrivals"> New Arrivals</a></li>
+                <li><a href="top_ten"> Best Sellers</a></li>
+                <li><a href="all_flowers"> All flowers</a></li>
+                <li> <a href="about_us"> About Us</a></li>
+            </ul>
+            </nav>
+        <div class="icons">
+        <a  href="/recognize_me/login"><img class="profile-icon" src="{% static 'Images\common_imgs\profile-icon.png'%}" alt="profile-icon"></a>
+        <a href="/my_orders_list"><img class="orders-basket-icon" src="{% static 'Images\common_imgs\orders-basket-icon.png'%}" alt="orders-basket-icon"></a>
+        <a href="/"><img class="home" src="{% static 'Images\common_imgs\home.png'%}" alt="home"></a>
+        </div>
+    </header>
+  
+
+
+    <form action="/book_item_for_me/{{product.id}}" method="post">
+		{% csrf_token %}
+		
+		<div class="main-container">
+			<span class="book-now-form-title texts">Book Now AND MAKE THEM HAPPY!</span>
+			<span class="about-to-book texts">You are about to book {{ product.name }}</span>
+            <div class="product-image">
+  
+                <img src="{{ product.product_image }}"   alt={{ product.name }} style="width:50%">
+                <!--  product Information-->
+              <div class="info">
+                <h2>The Description</h2>
+                <ul>
+                  <li><strong>Sun Needs: </strong>Full Sun</li>
+                  <li><strong>Price: </strong>{{ product.price}}₪</li>
+                  <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
+                  <li><strong>Category: </strong>{{ product.category}}</li>
+                </ul>
+              </div>
+            </div>
+    		
+		<div class="right-and-left">
+		  <div class="left-container">
+            <label class= texts for="required"><b>*Required</b></label>
+            <label class= texts for="quantity"><b>Tell us how many bouquets you want :</b></label>
+            <input class="input-style" type="number" id="quantity" name="quantity"
+            min="1" max="100">
+            <label class= texts for="delivery-date"><b>Delivery date *</b></label>
+		    <input class="input-style" type="date"  name="delivery-date" required>
+
+            <label class= texts for="delivary-address"><b>Delivary Address*</b></label>
+		    <input class="input-style" type="text" placeholder="delivary address *" name="delivary-address" required>
+            
+            <label class= texts for="notes"><b> Any additional notes for us  *</b></label>
+		    <input class="input-style" type="text" placeholder="if you want to add more details to your order *" name="notes" required>
+
+            <label class= texts for="receiver-name"><b> Please enter the full name for the person recieveing the flowers  *</b></label>
+            <input class="input-style" type="name" placeholder="Full name *" name="receiver_name" required>
+
+	  	</div>
+
+	  </div>
+	  
+	  
+	  <div class="error-messages texts">
+		{% if messages %}
+		<ul class="messages">
+			{% for message in messages %}
+			<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	  </div>
+
+	  <div class="book-now">
+	  <label class ="texts book-now-colour" for="join-family"><b>By clicking on  Send order we will recieve your order , payment is on delivary and delivary cost in Plestine is 20₪ , if you want to cancel your order make sure you do two days before the delivary date in your order list page.</b></label>
+
+	    <button type="submit">Send Order</button>
+	   </div>
+	</div>
+
+    <div class="error-messages texts">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+
+	</form>
+
+      <div class="footer_images">
+        <img class="right-footer" src="{% static 'Images\common_imgs\footer_basket.png'%}" alt="footer-part">
+      </div>
+    </div>
+    <div class="footer_bar">
+      <p>Copyright @Imas Zubaidia</p>
+    </div>
+  </body>
+</html>

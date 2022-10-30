@@ -1,0 +1,106 @@
+
+body{
+    background-color: #b5494d;
+    display: flex;
+flex-direction: column;
+}
+
+/* Bordered form */
+form {
+width: 50%;
+margin:  auto;
+margin-top: 12%;
+display:flex
+}
+
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 8px;
+margin: 8px 0;
+display: inline-block;
+outline: 0;
+border-bottom: 2px solid #980309;
+box-sizing: border-box;
+border-width: 0 0 2px;
+border-radius: 3px;
+color: #9e857f;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.2vw;
+}
+
+input[type=password] {
+background-color:#fcefea;
+}
+input[type=text]{
+background-color:#efbead;   
+}
+
+/* Set a style for all buttons */
+button {
+background-color: #42000c;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+font-size: 1.5vw;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+
+/* Add padding to containers */
+.main-container {
+padding: 7%;
+background-color:#ffffff;
+border-radius: 3px;
+display: flex;
+gap: 6%;
+}
+
+/* The "Forgot password" text */
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+.texts{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #881e05;
+    line-height: 1.7;
+    text-align:left;
+    width: 100%;
+    display:block;
+    margin-bottom: 2%;
+    font-size: 1vw;
+}
+
+.login-form-title{
+font-size: 2.5vw;
+text-transform: uppercase;
+
+}
+
+.regestration-title{
+font-size: 1.5vw;
+}
+.Existing-Customer{
+font-size: 1.5vw;
+}
+.regestration-container{display: flex;flex-direction: column;gap: 7%;justify-content: center;margin-bottom: 10%;}
+
+.footer{
+    width: 50%;
+    margin:  auto;
+    height: auto;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Flower</title>
+    {% load static %}	
+    <link rel="stylesheet" type="text/css" href="{% static 'css\my_orders.css'%}">
+    <script src="{% static 'js\basket.js'%}"></script>
+    <link rel="icon" href="{% static 'Images\common_imgs\orders-basket-icon.png'%}">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <img class="logo" src="{% static 'Images\common_imgs\logo.png'%}" alt="logo">
+        <nav>
+			<ul>
+				<li> <a href="new_arrivals"> New Arrivals</a></li>
+				<li><a href="top_ten"> Best Sellers</a></li>
+				<li><a href="all_flowers"> All flowers</a></li>
+				<li> <a href="about_us"> About Us</a></li>
+			</ul>
+		</nav>
+        <div class="icons">
+        <a  href="/recognize_me/login"><img class="profile-icon" src="{% static 'Images\common_imgs\profile-icon.png'%}" alt="profile-icon"></a>
+        <a href="/my_orders_list"><img class="orders-basket-icon" src="{% static 'Images\common_imgs\orders-basket-icon.png'%}" alt="orders-basket-icon"></a>
+        <a href="/"><img class="home" src="{% static 'Images\common_imgs\home.png'%}" alt="home"></a>
+        </div>
+    </header>
+    <img class="banner" src="{% static 'Images\common_imgs\my_orders_list_banner.png'%}" alt="my_cart">
+    
+	<div class="error-messages texts">
+		{% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+	</div>
+
+   
+    {% for order in orders_list %}
+    
+
+	<div class="container">
+
+		<section id="cart"> 
+			<article class="product">
+				<header>
+					<a class="remove">
+						<img src="{{ order.product.product_image }}"   alt="{{order.product.name}}" style="width:100%">
+
+						<a href="/delete_order/{{order.id}}"><h3>Remove product</h3></a>
+					</a>
+				</header>
+
+				<div class="content">
+					<h1>{{order.product.name}}</h1>
+				
+				</div>
+
+				<footer class="content">
+				
+					<span class="qt">{{ order.quantity }}</span>
+					
+					
+				
+					<h2 class="full-price">
+						{{ order.order_total }}₪
+					</h2>
+	
+					<h2 class="price">
+						{{ order.product.price}}₪
+					</h2>
+				
+				</footer>
+			</article>
+
+		</section>
+
+	</div>
+	
+	{% endfor %}
+
+	<div class="footer_images">
+        <img class="right-footer" src="{% static 'Images\homepage\right-footer-part.png'%}" alt="right-footer-part">
+        <img class="left-footer" src="{% static 'Images\homepage\left-footer-part.png'%}" alt="left-footer-part">
+    </div>
+
+    
+	</div>
+    <div class="footer_bar">
+      <p>Copyright @Imas Zubaidia</p>
+    </div>
+	
+
+  </body>
+</html>

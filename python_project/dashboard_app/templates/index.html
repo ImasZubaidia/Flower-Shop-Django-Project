@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imas Flower Shop</title>
+    {% load static %}	
+    <link rel="stylesheet" type="text/css" href="{% static 'css\homepage.css '%}">
+    <link rel="icon" href="{% static 'Images\common_imgs\orders-basket-icon.png'%}">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <img class="logo" src="{% static 'Images\common_imgs\logo.png'%}" alt="logo">
+        
+        <p>Hello {{ request.session.email }} </p>
+        <a href="/log_out">logout</a>
+        <nav>
+        <ul>
+            <li> <a href="new_arrivals"> New Arrivals</a></li>
+            <li><a href="top_ten"> Best Sellers</a></li>
+            <li><a href="all_flowers"> All flowers</a></li>
+            <li> <a href="about_us"> About Us</a></li>
+        </ul>
+        </nav>
+        <div class="icons">
+          <a  href="/recognize_me/login"><img class="profile-icon" src="{% static 'Images\common_imgs\profile-icon.png'%}" alt="profile-icon"></a>
+        <a href="/my_orders_list"><img class="orders-basket-icon" src="{% static 'Images\common_imgs\orders-basket-icon.png'%}" alt="orders-basket-icon"></a>
+        <a href="/"><img class="home" src="{% static 'Images\common_imgs\home.png'%}" alt="home"></a>
+        </div>
+    </header>
+      <img class="banner" src="{% static 'Images\homepage\banner.jpg'%}" alt="banner">
+      <div class="categories">
+        <div class="upper-bar">
+          <div class="card">
+            <img class="birthday" src="{% static 'Images\homepage\birthday-category.jpg'%}" alt="birthday">
+            <a href="birthday">Birthday</a>
+          </div>
+          <div class="card">
+            <img class="sympathy_and_funeral" src="{% static 'Images\homepage\sympathy_and_funeral_category.jpg'%}" alt="funeral">
+            <a href="sympathy_and_funerals">Sympathy and funerals</a>
+          </div>
+          <div class="card">
+            <img class="congrats" src="{% static 'Images\homepage\congrats_category.jpg'%}" alt="congrats">
+            <a href="congrats">Congrats</a>
+          </div>
+        </div>
+        <div class="lower-bar">
+          <div class="card">
+            <img class="anniversary" src="{% static 'Images\homepage\anniversary_category.jpg'%}" alt="anniversary">
+            <a href="anniversary">Anniversary</a>
+          </div>
+          <div class="card">
+            <img class="cheer_someone_up" src="{% static 'Images\homepage\cheer_someone_up_category.jpg'%}" alt="cheer">
+            <a href="cheer_someone_up">Cheer Someone Up</a>
+          </div>
+          <div class="card">
+            <img class="single_flower" src="{% static 'Images\homepage\single_flower_category.png'%}" alt="single_flower">
+            <a href="single_flower">Single flower</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_images">
+        <img class="right-footer" src="{% static 'Images\homepage\right-footer-part.png'%}" alt="right-footer-part">
+        <img class="left-footer" src="{% static 'Images\homepage\left-footer-part.png'%}" alt="left-footer-part">
+      </div>
+    </div>
+    <div class="footer_bar">
+      <p>Copyright @Imas Zubaidia</p>
+    </div>
+  </body>
+</html>

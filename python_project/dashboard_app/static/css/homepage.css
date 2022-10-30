@@ -1,0 +1,140 @@
+
+body{
+    background-color: #ffeddf;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+    width: 77%;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+
+.footer_images{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+}
+.upper-bar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+.lower-bar{
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    width: 100%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    background-color: #ffffff;
+}
+.right-footer{
+    width: 36%;
+}
+.left-footer{
+    width: 50%;
+}
+.birthday{
+    width: 100%;
+    height: auto;
+}
+.sympathy_and_funeral{
+    width: 100%;
+    height: auto;
+}
+.congrats{
+    width: 100%;
+    height: auto;
+}
+.anniversary{
+    width: 100%;
+    height: auto;
+}
+.cheer_someone_up{
+    width: 100%;
+    height: auto;
+}
+.single_flower{
+    width: 100%;
+    height: auto;
+}
+
+.footer_bar p{
+    background-color: #efbead;
+    width: 77%;
+    margin: auto;
+    height: 30%;
+    padding-top: 6%;
+    text-align: -webkit-center;
+    padding-bottom: 2%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.card a {
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+/*Page Header and nav bar */
+nav ul{
+    background: linear-gradient(90deg, #ffeddf 0%, #e1a581 50%, #dd9e85 100%);
+    color: #4b1002;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: #b5494d 1.95px 1.95px 2.6px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav li {
+    font-size: 1.5vw;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.logo{
+    width: 33%;
+    height: 33%;
+    margin-left: 1%;
+}
+
+nav {
+    text-align: center;
+    width: 45%;
+    margin-top: 8%;
+}
+.home{
+    width: 112%;
+    height: auto;
+}
+.profile-icon{
+    width: 400%;
+    height: auto;
+}
+.orders-basket-icon{
+    width: 400%;
+    height: auto;
+}
+.icons{
+    display: flex;
+    width: 16%;
+    align-items: baseline;
+    margin-top: 6%;
+    gap: 25%;
+}
