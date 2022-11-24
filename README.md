@@ -28,23 +28,5 @@
 
 ```
 
- # Samples
- 
- 1. Dashboard Main Page 
- 
- ![IMAS Flower Shop](https://user-images.githubusercontent.com/110999043/203746530-69d10cdd-4496-414d-bed5-ec8c79831bfc.png)
-
-
-
- . Register Page
- 
- <img style="width:25%;src="https://user-images.githubusercontent.com/110999043/203744983-471c74f0-bc13-4ae8-9577-894997b23119.png"/>
-
- 
- 2. Login Page 
- 
- <img style="width:25%;src="https://user-images.githubusercontent.com/110999043/203744459-d4f69a7e-c7b4-4213-8af9-3a4fc5568622.png"/>
-
-
 
 
