@@ -23,13 +23,3 @@
 <!-- language -->
 
 [![](https://skillicons.dev/icons?i=python,django,mysql,git,github)]()
-
-
-
-# Samples
-
-https://imgur.com/a/hhPSaSg                 
-                 
-
-
-
