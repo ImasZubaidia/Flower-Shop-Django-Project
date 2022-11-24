@@ -32,7 +32,8 @@
  
  1. Dashboard Main Page 
  
- <img style="width:25%; src="https://user-images.githubusercontent.com/110999043/203744667-2a15fdc5-ec8f-4d87-b43f-8a4357aa6e5f.png"/>
+ ![IMAS Flower Shop](https://user-images.githubusercontent.com/110999043/203746530-69d10cdd-4496-414d-bed5-ec8c79831bfc.png)
+
 
 
  . Register Page
