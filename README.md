@@ -28,7 +28,7 @@
 
 # Samples
 
- src="https://user-images.githubusercontent.com/110999043/203748664-2affebcd-b7b3-4f86-8322-d6ba6b97661b.png"
+ https://user-images.githubusercontent.com/110999043/203748664-2affebcd-b7b3-4f86-8322-d6ba6b97661b.png
                  
                  
 
