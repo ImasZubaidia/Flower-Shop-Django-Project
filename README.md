@@ -32,17 +32,17 @@
  
  1. Dashboard Main Page 
  
- <img style="width:25%;" src="https://user-images.githubusercontent.com/110999043/203744667-2a15fdc5-ec8f-4d87-b43f-8a4357aa6e5f.png""/>
+ <img style="width:25%; src="https://user-images.githubusercontent.com/110999043/203744667-2a15fdc5-ec8f-4d87-b43f-8a4357aa6e5f.png"/>
 
 
  . Register Page
  
- <img style="width:25%;"src="https://user-images.githubusercontent.com/110999043/203744983-471c74f0-bc13-4ae8-9577-894997b23119.png""/>
+ <img style="width:25%;src="https://user-images.githubusercontent.com/110999043/203744983-471c74f0-bc13-4ae8-9577-894997b23119.png"/>
 
  
  2. Login Page 
  
- <img style="width:25%;"src="https://user-images.githubusercontent.com/110999043/203744459-d4f69a7e-c7b4-4213-8af9-3a4fc5568622.png""/>
+ <img style="width:25%;src="https://user-images.githubusercontent.com/110999043/203744459-d4f69a7e-c7b4-4213-8af9-3a4fc5568622.png"/>
 
 
 
